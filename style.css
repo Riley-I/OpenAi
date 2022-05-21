@@ -1,0 +1,91 @@
+/* CSS HEX */
+/* --melon: #E5A897ff;
+--melon-2: #EAB0A2ff;
+--oxford-blue: #0A1737ff;
+--dark-cornflower-blue: #004290ff; */
+
+
+.container .bottom{
+    margin-top: 50px;
+    border: 2px solid #EAB0A2ff;
+}
+
+h2{
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+}
+
+h3{
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-size: 16px !important;
+    letter-spacing: 1.5px;
+}
+
+h1, h2, h3{
+    color: #0A1737ff;
+}
+
+
+button{
+    border-radius: 1px !important;
+    border: 2px solid #EAB0A2ff!important;
+    background-color: #EAB0A2ff !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+}
+
+button:hover{
+    border-radius: 1px !important;
+    border: 2px solid grey!important;
+    background-color: transparent !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    color: grey !important;
+}
+
+input{
+    border-color: transparent !important;
+    border-bottom: grey !important;
+    border-bottom-style: solid !important;
+    border-bottom-width: 2px !important;
+}
+
+#history{
+    padding-top: 40px;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    color: grey;
+    font-style: italic;
+    padding-top:20px;
+    display: block;
+    padding-right: 10px;
+}
+
+button {
+    margin-left: 30px;
+    color: white;
+    display: inline;
+}
+
+.credit{
+    color: #0A1737ff !important;
+    display: block;
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 10px;
+}
+
+
+@media only screen and (min-width: 900px) {
+    li{
+        display: inline;
+    }
+  }
