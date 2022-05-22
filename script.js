@@ -31,6 +31,8 @@ function getPrompt(data){
   promptDiv.appendChild(li);
 }
 
+//console.log(secretKey)
+let key = secretKey;
 
 //SEND REQUEST
 function sendRequest(){
@@ -38,8 +40,7 @@ function sendRequest(){
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-        //   Authorization: `Bearer ${process.env.OPENAI_SECRET}`,
-          Authorization: `Bearer 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`,
+          Authorization: "Bearer " + key,
         },
         body: JSON.stringify(data),
        })
@@ -74,7 +75,7 @@ var myElementTwo = document.getElementById("suggestionTwo");
 var myElementThree = document.getElementById("suggestionThree");
 
 function getSuggestionsFirst(myElementOne){
-  console.log(myElementOne);
+  //console.log(myElementOne);
   let btn = document.createElement("button");
   btn.innerHTML = "Select";
 
@@ -95,7 +96,7 @@ function getSuggestionsFirst(myElementOne){
 }
 
 function getSuggestionsSecond(myElementTwo){
-  console.log(myElementTwo);
+  //console.log(myElementTwo);
   let btn = document.createElement("button");
   btn.innerHTML = "Select";
 
@@ -116,7 +117,7 @@ function getSuggestionsSecond(myElementTwo){
 }
 
 function getSuggestionsThird(myElementThree){
-  console.log(myElementThree);
+  //console.log(myElementThree);
   let btn = document.createElement("button");
   btn.innerHTML = "Select";
 
@@ -139,7 +140,6 @@ function getSuggestionsThird(myElementThree){
 getSuggestionsFirst(myElementOne);
 getSuggestionsSecond(myElementTwo);
 getSuggestionsThird(myElementThree);
-
 
 
 //////////////////CLEAR////////////////
