@@ -7,18 +7,23 @@
 
 .container .bottom{
     margin-top: 50px;
-    border: 2px solid #EAB0A2ff;
+    border: 2px solid #FDF7F6 !important;
+}
+
+body{
+    background-color: #EBB4A7 !important;
 }
 
 h2{
     padding-top: 30px;
+    padding-bottom: 20px;
     text-transform: uppercase;
     font-size: 22px;
     letter-spacing: 1.5px;
 }
 
 h3{
-    padding-top: 30px;
+    padding-top: 40px;
     text-transform: uppercase;
     font-size: 16px !important;
     letter-spacing: 1.5px;
@@ -28,27 +33,36 @@ h1, h2, h3{
     color: #0A1737ff;
 }
 
+h1{
+    padding-top:20px;
+}
+
+.bottom h3{
+    padding-top:20px;
+
+}
+
 
 button{
     border-radius: 1px !important;
-    border: 2px solid #EAB0A2ff!important;
-    background-color: #EAB0A2ff !important;
+    border: 2px solid #2F2320!important;
+    background-color: #2F2320 !important;
     text-transform: uppercase !important;
     letter-spacing: 2px !important;
 }
 
 button:hover{
     border-radius: 1px !important;
-    border: 2px solid grey!important;
+    border: 2px solid #FDF7F6!important;
     background-color: transparent !important;
     text-transform: uppercase !important;
     letter-spacing: 2px !important;
-    color: grey !important;
+    color: #FDF7F6!important;
 }
 
 input{
     border-color: transparent !important;
-    border-bottom: grey !important;
+    border-bottom: #FDF7F6 !important;
     border-bottom-style: solid !important;
     border-bottom-width: 2px !important;
 }
@@ -62,7 +76,7 @@ ul{
 }
 
 li{
-    color: grey;
+    color: rgb(73, 73, 73);
     font-style: italic;
     padding-top:20px;
     display: block;
