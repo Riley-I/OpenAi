@@ -24,11 +24,12 @@ function getPrompt(data){
   let promptValue = document.getElementById("prompt").value;
   data.prompt = promptValue; //push prompt value into data object
   console.log(data);
-
+  linebreak = document.createElement("br");
   const promptDiv = document.getElementById("writePrompt");
   const li = document.createElement("li");
   li.innerHTML = promptValue;
   promptDiv.appendChild(li);
+  li.appendChild(linebreak)
 }
 
 //console.log(secretKey)
@@ -55,11 +56,13 @@ function sendRequest(){
             let response = responseArray[i].text;
             console.log(response);
 
+            linebreak = document.createElement("br");
             const responseDiv = document.getElementById("writeResponse");
             const liResponse = document.createElement("li");
             liResponse.classList.add("response");
             liResponse.innerHTML = response;
             responseDiv.appendChild(liResponse);
+            liResponse.appendChild(linebreak);
           } 
         })
         .catch((error) => {

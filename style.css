@@ -69,6 +69,10 @@ li{
     padding-right: 10px;
 }
 
+#writePrompt li, #writeResponse li{
+    display: block !important;
+}
+
 button {
     margin-left: 30px;
     color: white;
